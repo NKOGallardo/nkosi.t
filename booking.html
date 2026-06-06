@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Book a session with Nkosi T. Fill out our inquiry form to get started with your photography or videography project.">
+    <title>Book Now | Nkosi T</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+</head>
+<body>
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress-bar"></div>
+
+    <!-- Navigation Header -->
+    <header class="header" id="header">
+        <div class="header-container">
+            <div class="header-content">
+                <a href="/" class="logo">
+                    <span class="logo-text">NKOSI T</span>
+                </a>
+
+                <nav class="nav-desktop" aria-label="Main navigation">
+                    <ul class="nav-list">
+                        <li><a href="/" class="nav-link">Home</a></li>
+                        <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+                        <li><a href="services.html" class="nav-link">Services</a></li>
+                        <li><a href="about.html" class="nav-link">About</a></li>
+                        <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    </ul>
+                </nav>
+
+                <a href="booking.html" class="btn btn-primary btn-header active">Book Now</a>
+
+                <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+                    <span class="menu-icon"></span>
+                </button>
+            </div>
+        </div>
+
+        <nav class="nav-mobile" id="nav-mobile" aria-label="Mobile navigation">
+            <ul class="nav-mobile-list">
+                <li><a href="/" class="nav-mobile-link">Home</a></li>
+                <li><a href="portfolio.html" class="nav-mobile-link">Portfolio</a></li>
+                <li><a href="services.html" class="nav-mobile-link">Services</a></li>
+                <li><a href="about.html" class="nav-mobile-link">About</a></li>
+                <li><a href="contact.html" class="nav-mobile-link">Contact</a></li>
+                <li><a href="booking.html" class="btn btn-primary btn-mobile-cta">Book Now</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- ================================ -->
+        <!-- PAGE HEADER                      -->
+        <!-- ================================ -->
+        <section class="page-header">
+            <div class="container">
+                <h1 class="page-title" data-aos="fade-up">Book Your Session</h1>
+                <p class="page-subtitle" data-aos="fade-up" data-aos-delay="100">Tell us about your project and let's bring your vision to life</p>
+            </div>
+        </section>
+
+        <!-- ================================ -->
+        <!-- BOOKING FORM SECTION             -->
+        <!-- ================================ -->
+        <section class="section booking-section">
+            <div class="container">
+                <div class="form-wrapper" data-aos="fade-up">
+                    <!-- Progress Indicator -->
+                    <div class="form-progress">
+                        <div class="progress-step active" data-step="1">
+                            <span class="progress-number">1</span>
+                            <span class="progress-label">Service</span>
+                        </div>
+                        <div class="progress-line"></div>
+                        <div class="progress-step" data-step="2">
+                            <span class="progress-number">2</span>
+                            <span class="progress-label">Details</span>
+                        </div>
+                        <div class="progress-line"></div>
+                        <div class="progress-step" data-step="3">
+                            <span class="progress-number">3</span>
+                            <span class="progress-label">Contact</span>
+                        </div>
+                    </div>
+
+                    <!-- Booking Form -->
+                    <form id="booking-form" class="booking-form" action="#" method="POST" novalidate>
+                        <!-- STEP 1: Service Selection -->
+                        <fieldset class="form-step active" data-step="1">
+                            <legend>What service are you interested in?</legend>
+                            
+                            <div class="form-group">
+                                <label class="radio-label">
+                                    <input type="radio" name="service" value="photography" required>
+                                    <span class="radio-custom"></span>
+                                    <span class="radio-text">
+                                        <strong>Photography</strong>
+                                        <small>Portraits, events, fashion, commercial</small>
+                                    </span>
+                                </label>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="radio-label">
+                                    <input type="radio" name="service" value="videography">
+                                    <span class="radio-custom"></span>
+                                    <span class="radio-text">
+                                        <strong>Videography</strong>
+                                        <small>Events, commercials, content creation</small>
+                                    </span>
+                                </label>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="radio-label">
+                                    <input type="radio" name="service" value="editing">
+                                    <span class="radio-custom"></span>
+                                    <span class="radio-text">
+                                        <strong>Editing & Retouching</strong>
+                                        <small>Photo editing, color grading, post-production</small>
+                                    </span>
+                                </label>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="radio-label">
+                                    <input type="radio" name="service" value="content-creation">
+                                    <span class="radio-custom"></span>
+                                    <span class="radio-text">
+                                        <strong>Content Creation</strong>
+                                        <small>Social media, reels, brand content</small>
+                                    </span>
+                                </label>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="radio-label">
+                                    <input type="radio" name="service" value="other">
+                                    <span class="radio-custom"></span>
+                                    <span class="radio-text">
+                                        <strong>Other / Custom Project</strong>
+                                        <small>Tell us about your unique project</small>
+                                    </span>
+                                </label>
+                            </div>
+
+                            <div class="form-actions">
+                                <button type="button" class="btn btn-primary" onclick="nextStep()">Next Step</button>
+                            </div>
+                        </fieldset>
+
+                        <!-- STEP 2: Project Details -->
+                        <fieldset class="form-step" data-step="2">
+                            <legend>Tell us more about your project</legend>
+
+                            <div class="form-group">
+                                <label for="project-title">Project Title / Event Name *</label>
+                                <input type="text" id="project-title" name="project-title" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="event-date">Event Date *</label>
+                                <input type="date" id="event-date" name="event-date" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="event-location">Location / Venue *</label>
+                                <input type="text" id="event-location" name="event-location" placeholder="Where will the event take place?" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="event-duration">Duration Needed</label>
+                                <select id="event-duration" name="event-duration">
+                                    <option value="">Select duration</option>
+                                    <option value="2-hours">2 hours</option>
+                                    <option value="4-hours">4 hours</option>
+                                    <option value="6-hours">6 hours</option>
+                                    <option value="8-hours">8 hours (Full day)</option>
+                                    <option value="full-day">Full day (12+ hours)</option>
+                                    <option value="multi-day">Multi-day</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="budget-range">Approximate Budget</label>
+                                <select id="budget-range" name="budget-range">
+                                    <option value="">Select budget range</option>
+                                    <option value="2000-3000">R2,000 - R3,000</option>
+                                    <option value="3000-5000">R3,000 - R5,000</option>
+                                    <option value="5000-10000">R5,000 - R10,000</option>
+                                    <option value="10000-20000">R10,000 - R20,000</option>
+                                    <option value="20000">R20,000+</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="project-description">Project Description *</label>
+                                <textarea id="project-description" name="project-description" rows="5" placeholder="Tell us about your project, vision, and any specific requirements..." required></textarea>
+                            </div>
+
+                            <div class="form-actions">
+                                <button type="button" class="btn btn-secondary" onclick="previousStep()">Back</button>
+                                <button type="button" class="btn btn-primary" onclick="nextStep()">Next Step</button>
+                            </div>
+                        </fieldset>
+
+                        <!-- STEP 3: Contact Information -->
+                        <fieldset class="form-step" data-step="3">
+                            <legend>Your Contact Information</legend>
+
+                            <div class="form-group">
+                                <label for="full-name">Full Name *</label>
+                                <input type="text" id="full-name" name="full-name" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone">Phone Number *</label>
+                                <input type="tel" id="phone" name="phone" placeholder="+27..." required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="company">Company / Brand (Optional)</label>
+                                <input type="text" id="company" name="company">
+                            </div>
+
+                            <div class="form-group checkbox">
+                                <label for="agree-terms">
+                                    <input type="checkbox" id="agree-terms" name="agree-terms" required>
+                                    <span>I agree to the terms and conditions and privacy policy</span>
+                                </label>
+                            </div>
+
+                            <div class="form-actions">
+                                <button type="button" class="btn btn-secondary" onclick="previousStep()">Back</button>
+                                <button type="submit" class="btn btn-primary">Send Inquiry</button>
+                            </div>
+                        </fieldset>
+
+                        <!-- Form Errors -->
+                        <div id="form-error" class="form-error" style="display: none;"></div>
+                    </form>
+
+                    <!-- Success Message -->
+                    <div id="success-message" class="success-message" style="display: none;">
+                        <div class="success-content">
+                            <h2>Thank You!</h2>
+                            <p>Your inquiry has been received. We'll get back to you within 24 hours to discuss your project and confirm availability.</p>
+                            <a href="/" class="btn btn-primary">Back to Home</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================================ -->
+        <!-- INFO BOXES                       -->
+        <!-- ================================ -->
+        <section class="section info-boxes">
+            <div class="container">
+                <div class="boxes-grid" data-aos="fade-up">
+                    <article class="info-box">
+                        <h3>Fast Response</h3>
+                        <p>We respond to all inquiries within 24 hours. Quick confirmation of availability and pricing.</p>
+                    </article>
+
+                    <article class="info-box">
+                        <h3>Custom Packages</h3>
+                        <p>Each project is unique. We offer customized packages tailored to your specific needs and budget.</p>
+                    </article>
+
+                    <article class="info-box">
+                        <h3>Professional Team</h3>
+                        <p>Work with experienced professionals who are passionate about delivering exceptional results.</p>
+                    </article>
+
+                    <article class="info-box">
+                        <h3>Flexible Scheduling</h3>
+                        <p>We accommodate your schedule. Flexible booking options for weekdays, weekends, and holidays.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-title">Nkosi T</h3>
+                    <p class="footer-description">Premium photography and videography services in Johannesburg.</p>
+                    <div class="footer-socials">
+                        <a href="https://instagram.com/nkosit" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="social-link">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 8a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm5.5-8.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" fill="#0A0A0A"></path>
+                            </svg>
+                        </a>
+                        <a href="https://facebook.com/nkosit" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="social-link">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"></path>
+                            </svg>
+                        </a>
+                        <a href="https://tiktok.com/@nkosit" target="_blank" rel="noopener noreferrer" aria-label="TikTok" class="social-link">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+                                <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.86 2.86 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-.01-.01z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="booking.html">Book Now</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="services.html#photography">Photography</a></li>
+                        <li><a href="services.html#videography">Videography</a></li>
+                        <li><a href="services.html#editing">Editing</a></li>
+                        <li><a href="services.html#content">Content Creation</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul class="footer-links">
+                        <li><a href="tel:+27123456789">+27 (0) 12 345 6789</a></li>
+                        <li><a href="mailto:hello@nkosit.com">hello@nkosit.com</a></li>
+                        <li><a href="https://wa.me/27123456789" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 Nkosi T. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <span class="separator">•</span>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Action Buttons -->
+    <a href="https://wa.me/27123456789" class="fab fab-whatsapp" aria-label="Contact on WhatsApp" target="_blank" rel="noopener noreferrer">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.67-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.076 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421-7.403h-.004a9.87 9.87 0 00-9.746 9.798c0 2.734.732 5.395 2.124 7.74L.929 23.5l8.272-2.735h.001c2.267 1.231 4.884 1.88 7.57 1.88 5.387 0 9.795-4.396 9.823-9.803a9.823 9.823 0 00-9.823-9.803"/>
+        </svg>
+    </a>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    
+    <script src="js/script.js"></script>
+    <script src="js/form-handler.js"></script>
+</body>
+</html>
