@@ -219,7 +219,7 @@ The website is optimized for:
 1. Clone the repository
 
 ```bash
-git clone https://github.com/yourusername/nkosi-t-portfolio.git
+git clone https://github.com/yourusername/nkosi.t.git
 ```
 
 2. Open the project folder
