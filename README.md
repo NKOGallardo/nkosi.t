@@ -225,7 +225,7 @@ git clone https://github.com/yourusername/nkosi.t.git
 2. Open the project folder
 
 ```bash
-cd nkosi-t-portfolio
+cd nkosi.t
 ```
 
 3. Launch the website
